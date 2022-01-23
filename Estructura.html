@@ -16,11 +16,11 @@
         <nav class="enlaces">
             <ul>
                 <li>
-                    <a href="#mi top 10">Mis insectos Favoritos</a>
+                    <a href="#mi_top_10">Mis insectos Favoritos</a>
                 </li>
                 
                 <li>
-                    <a href="#mi viaje">Mi viaje a Redshore City</a>
+                    <a href="#mi_viaje">Mi viaje a Redshore City</a>
                 </li>
 
                 <li>
@@ -33,21 +33,23 @@
     <main>
         <aside class="perfil">
 
-        <img id="foto" src="Miss Crawley_02.jpg" alt="Mi mejor perfil">
+          <img id="foto_perfil" src="Miss_Crawley_02.jpg" alt="Mi mejor perfil">
 
-        <h2> Miss Crawley </h2>
+          <h2> Miss Crawley </h2>
 
-        <p>All you need is sing</p>
+          <p>All you need is sing</p>
 
-        <a href="#">camaleona.estrabica@example.com</a>
+          <a href="#">camaleona.estrabica@example.com</a>
 
 
         </aside>
 
-
-        <section class="contenido">
-            <article id="mi top 10">
+  
+        <section class="contenido"> <!-- No sé porqué me da error aquí y me permite hacer lo mismo en la linea 111 -->
+            
+            <article id="mi_top_10">
                 <h2>Mis 10 insectos favoritos</h2>
+                
                 <ol>
                     <li>
                         Avispón asiático
@@ -82,10 +84,12 @@
 
                 </ol>
             </article>
-            <article id="mi viaje">
+        
+
+            <article id="mi_viaje">
 
                 <h2>Mi viaje a Redshore City</h2>
-                <img class="logo" src="Redshore City.jpg" alt="Vivaaan Redshore City">
+                <img id="foto_viaje" src="Redshore_City.jpg" alt="Vivaaan Redshore City">
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,17 +107,42 @@
                 </p>
             </article>
         </section>
-        <section>
-            <div class="contacto">
-                <form action="">
 
+        <section class="contacto">
+            <div id="formulario">
+                <h2> Cuentame lo que quieras</h2>
+
+                <form action="correo.gestion@example.com" method="post">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name= "nombre" id="nombre">
+
+                    <label for="email">Email: </label>
+                    <input type="text" name ="email" id = "email">
+
+                    <label for="fechadenacimiento">Fecha de nacimiento</label>
+                    <input type="date" name ="fecha de nacimiento" id="fechadenacimiento">
+
+                    <label for="consultas">En que puedo ayudarte: </label>
+                    <textarea
+                        name="consultas" id="consultas" cols="30" rows="7" 
+                        placeholder="Escribe aquí lo que quieras...">
+                    </textarea>
+
+                    <input type="checkbox" value = "suscribirse" id="suscribirse" >
+                    <label for="suscribirse">Suscribirse a newslwtter</label>
+
+                    <input type="submit" value="Enviar">
                 </form>
+
             </div>
+
         </section>
+
     </main>
     <footer>
         <nav>
-
+            <a href="terminos_y_condiciones.html" target = "_blank">Terminos y condiciones</a>
+            <a href="politica_privacidad.html" target = "_blank">Politica de privacidad</a>
         </nav>
     </footer>
 
