@@ -6,8 +6,9 @@
 html {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
-
 }
+
+
 header {
     color: white;
     display:flex;
@@ -25,9 +26,8 @@ h1{
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 [data-material]{
@@ -80,7 +80,7 @@ thead {
 }
 
 tbody th:nth-child(1n) {
-    background-color: rgb(176, 208, 238);
+    background-color: rgba(26, 146, 243, 0.233);
 
 }
 
@@ -92,6 +92,11 @@ tbody tr:nth-child(2n+1) {
 tbody tr:nth-child(2n) {
     background-color: rgb(176, 208, 238);
     text-align: center;
+
+}
+
+#descanso {
+    font-weight: bold;
 
 }
 
